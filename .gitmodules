@@ -6,7 +6,7 @@
 	url = git@github.com:hiddify/psiphon-quic-go
 [submodule "replace/psiphon-tls"]
 	path = replace/psiphon-tls
-	url = git@github.com:hiddify/psiphon-tls
+	url = https://github.com/keeldj03-sys/psiphon-tls.git
 [submodule "replace/wireguard-go"]
 	path = replace/wireguard-go
 	url = git@github.com:hiddify/wireguard-go
