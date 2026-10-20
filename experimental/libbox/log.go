@@ -61,6 +61,15 @@ func saveConfigSnapshot(configContent string) {
 	chownReport(snapshotPath)
 }
 
+// RedirectStderr points the Go runtime crash output at the given path.
+//
+// hiddify-core calls this to capture the crash log of the core process.
+// The implementation is redirectStderr below; the exported name is what
+// the core expects.
+func RedirectStderr(path string) error {
+	return redirectStderr(path)
+}
+
 func redirectStderr(path string) error {
 	crashReportsDir := filepath.Join(sWorkingPath, "crash_reports")
 	archiveCrashReport(path, crashReportsDir)
