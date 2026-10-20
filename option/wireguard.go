@@ -53,6 +53,9 @@ type WireGuardWARPEndpointOptions struct {
 	MTU              uint32               `json:"mtu,omitempty"`
 }
 
+// hiddify-core v2/config refers to this type as WARPEndpointOptions.
+type WARPEndpointOptions = WireGuardWARPEndpointOptions
+
 type WARPProfile struct {
 	ID         string `json:"id,omitempty"`
 	PrivateKey string `json:"private_key,omitempty"`
