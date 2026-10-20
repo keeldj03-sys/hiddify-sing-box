@@ -25,3 +25,8 @@ _htest/
 CLAUDE.md
 AGENTS.md
 /.claude/
+
+# Unfinished local experiment: the shadowcast transport needs the separate
+# shadowcast/api module, which is not part of this repository.
+option/shadowcast.go
+protocol/shadowcast/
